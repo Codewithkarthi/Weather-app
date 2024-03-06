@@ -1,0 +1,292 @@
+* {
+  margin:0;
+
+  padding:0;
+
+  box-sizing: border-box;
+  border-radius: 31px;
+background-color: transparent;
+
+
+             
+}
+
+body {
+  width: 100%;
+
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+background-image:url("https://i.ibb.co/QJLSjWW/385884-stormy-weather-wallpaper-storm-wallpaper-weather-wallpaper-nature.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  
+}
+.weatherContainer {
+  width:1200px;
+  height:1100px;
+  margin: 2rem;
+
+  padding: 1rem 1rem;
+
+  border-radius: 1rem;
+
+  display: flex;
+
+  justify-content:center;
+
+  align-items: center;
+
+ flex-direction:column;
+  
+background: transparent;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 10px 10px 20px #000; /* Adjust shadow values for depth */
+             
+}
+#weatherForm{
+  color:white;
+  }
+
+#weatherForm input {
+  border:3px solid white;
+
+  color:white;
+
+  outline: none;
+
+  font-size:42px;
+
+  font-family: sans-serif;
+
+  background: transperant;
+  
+ 
+
+}
+
+#weatherForm ul li {
+  list-style: none;
+}
+.searchBtn{
+  color:white;
+  padding-left:10px;
+  }
+.searchBtn {
+  background: transperant;
+  
+}
+
+.searchBtn ul li {
+  list-style: none;
+
+  font-size: 52px;
+}
+
+#weatherForm {
+  display: flex;
+
+  justify-content: space-around;
+  padding:2px;
+  margin:auto;
+  color:white;
+}
+
+.appHeading {
+  align-items:top-center;
+  
+ 
+  color:#fff;
+  
+  font-size:54px;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 5px white;
+}
+
+#city {
+  text-transform: capitalize;
+
+  text-align: center;
+
+  margin-top: 1rem;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.weatherContainer img {
+  width: 50%;
+}
+
+#temp {
+  word-spacing: -8px;
+
+  font-size: 36px;
+
+  margin-bottom: 1rem;
+
+  font-family: "Poppins", sans-serif;
+}
+
+#temp sup {
+  font-size:24px;
+}
+
+.weatherMain {
+  font-family: sans-serif;
+  font-size:32px;
+  font-style:italic;
+  margin-bottom:12px;
+}
+
+#todayTime,
+.todayDates {
+  font-family: sans-serif;
+   font-size:32px;
+  line-height: 2rem;
+}
+
+/* Utility Classes */
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.f-col {
+  flex-direction: column;
+}
+
+/* Media Query for Responsive */
+
+@media screen and (max-width: 307px) {
+  #weatherForm {
+    flex-direction: column;
+  }
+
+  #weatherForm input {
+    text-align: center;
+
+    margin-bottom: 1rem;
+  }
+}
+/*@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.weatherContainer {
+  /* Replace "calculator" with the actual class or ID of your calculator element */
+
+/*  animation: shake 0.2s ease-in-out;  Adjust the duration as needed */
+
+  /*animation-iteration-count: 2; /* Adjust the iteration count as needed */
+/*}*/
+
+@keyframes lightAnimation {
+  0% {
+    border-color: #fff; /* Initial color */
+
+   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Initial shadow*/
+  }
+
+50% {
+    border-color: #ffd700;/*Lighter color at mid-animation */
+
+   box-shadow: 0 0 20px rgba(255, 215, 0, 0.8); /* Lighter shadow at mid-animation */
+  }
+
+  100% {
+   border-color: #fff;/* Back to the initial color */
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Back to the initial shadow */
+  }
+  }
+
+.weatherContainer {
+  border: 2px solid #fff; 
+
+  border-radius: 10px; 
+
+  padding: 20px; 
+
+  animation: lightAnimation 5s infinite;
+}
+@keyframes weatherAnimation {
+
+  0% {
+
+    filter: blur(0);
+
+    transform: translateX(0);
+
+  }
+
+  50% {
+
+    filter: blur(5px);
+
+    transform: translateX(10px);
+
+  }
+
+  100% {
+
+    filter: blur(0);
+
+    transform: translateX(0);
+
+  }
+
+}
+
+.weatherContainer {
+
+  width: 700px;
+
+  height:600px;
+
+  background-color: transperant; 
+border-radius:20px;
+
+  animation: weatherAnimation 1s ; 
+
+}
+.weatherContainer:hover{
+  background: rgba(26, 26, 26, 0.5);
+  
+  }
